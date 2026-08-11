@@ -8,15 +8,13 @@
 
 <p align="center">
   <a href="#about">About</a>&nbsp;&nbsp;·&nbsp;&nbsp;
-  <a href="#working-set">Working Set</a>&nbsp;&nbsp;·&nbsp;&nbsp;
-  <a href="#featured-build">Featured Build</a>&nbsp;&nbsp;·&nbsp;&nbsp;
-  <a href="#github-activity">Activity</a>
+  <a href="#tech-stack">Tech Stack</a>&nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="#github-activity">GitHub Activity</a>
 </p>
 
 ---
 
-<a id="about"></a>
-## `~/about`
+## About
 
 ```text
 name       : Tan Junlin
@@ -31,48 +29,26 @@ I build practical software around backend systems and modern AI, with an emphasi
 
 ---
 
-<a id="working-set"></a>
-## `~/working-set`
+## Tech Stack
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=py,cpp,cs,ts,fastapi,react,vite,git,github,vscode,powershell,unity,unreal&theme=dark&perline=13">
-    <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=py,cpp,cs,ts,fastapi,react,vite,git,github,vscode,powershell,unity,unreal&theme=light&perline=13">
-    <img alt="Python, C++, C#, TypeScript, FastAPI, React, Vite, Git, GitHub, VS Code, PowerShell, Unity, and Unreal Engine" src="https://skillicons.dev/icons?i=py,cpp,cs,ts,fastapi,react,vite,git,github,vscode,powershell,unity,unreal&theme=light&perline=13">
+    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=py,fastapi,go,postgres,docker,git,unity,cs,unreal,cpp&theme=dark&perline=10">
+    <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=py,fastapi,go,postgres,docker,git,unity,cs,unreal,cpp&theme=light&perline=10">
+    <img alt="Python, FastAPI, Go, PostgreSQL, Docker, Git, Unity, C#, Unreal Engine, and C++" src="https://skillicons.dev/icons?i=py,fastapi,go,postgres,docker,git,unity,cs,unreal,cpp&theme=light&perline=10">
   </picture>
 </p>
 
 <p align="center">
-  <strong>Backend</strong> · FastAPI · Pydantic · REST APIs · Backend Workflows<br>
-  <strong>AI & Agent</strong> · LLM · LangGraph · Structured Outputs · Tool Calling<br>
-  <strong>Engineering</strong> · Git · pytest · Automated Testing · GitHub Actions
+  <strong>Backend</strong> · Python · FastAPI · Go · PostgreSQL · Docker<br>
+  <strong>AI Agent</strong> · LLM · LangGraph · Agent Workflow<br>
+  <strong>Engineering</strong> · Git · pytest<br>
+  <strong>Game Runtime</strong> · Unity / C# · Unreal Engine / C++
 </p>
 
 ---
 
-<a id="featured-build"></a>
-## `~/featured-build`
-
-<table>
-  <tr>
-    <td width="68%" valign="top">
-      <h3><a href="https://github.com/theHerta27/game-change-verification-agent">Game Change Verification Agent</a></h3>
-      <p>An AI agent workflow for automated software change verification, combining configuration generation, runtime execution, telemetry collection, evaluation, and iterative repair.</p>
-      <p><a href="https://github.com/theHerta27/game-change-verification-agent"><strong>Explore the repository →</strong></a></p>
-    </td>
-    <td width="32%" valign="top">
-      <strong>Built with</strong><br><br>
-      <code>Python</code> <code>FastAPI</code><br>
-      <code>React</code> <code>TypeScript</code><br>
-      <code>Unity</code> <code>Unreal Engine</code>
-    </td>
-  </tr>
-</table>
-
----
-
-<a id="github-activity"></a>
-## `~/github-activity`
+## GitHub Activity
 
 <div align="center">
   <picture>
