@@ -1,10 +1,10 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./profile/header-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./profile/header-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./profile/header-dark.gif">
+  <source media="(prefers-color-scheme: light)" srcset="./profile/header-light.gif">
   <img alt="Tan Junlin — Backend Development, AI/LLM Applications, Agent Systems, and Software Engineering" src="./profile/header-light.svg" width="100%">
 </picture>
 
-<p align="center"><strong>Building practical software with backend systems and modern AI.</strong></p>
+<p align="center"><strong>把想法做成系统 · Turn Ideas into Systems</strong></p>
 
 <p align="center">
   <a href="#about">About</a>&nbsp;&nbsp;·&nbsp;&nbsp;
@@ -16,16 +16,22 @@
 
 ## About
 
+### `$ whoami`
+
 ```text
-name       : Tan Junlin
-education  : Master's student
-program    : New Generation Electronic Information Technology
-school     : Xidian University
-focus      : Backend systems · AI/LLM applications · Agent workflows
-direction  : Backend · AI Application · Agent · Software Engineering
+Tan Junlin | 把想法做成系统 · Turn Ideas into Systems
 ```
 
-I build practical software around backend systems and modern AI, with an emphasis on clear workflows, testable behavior, and engineering evidence.
+### `$ cat .profile`
+
+```text
+name      : Tan Junlin
+education : Master's Student @ Xidian University
+focus     : Backend · AI/LLM Applications · Agent Systems
+currently : Building practical software and learning by doing
+learning  : Go · Backend Systems · AI Engineering
+interests : Software Engineering · Open Source · AI Applications
+```
 
 ---
 
@@ -33,9 +39,19 @@ I build practical software around backend systems and modern AI, with an emphasi
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=py%2Cfastapi%2Cgo%2Cpostgres%2Cdocker%2Cgit%2Cunity%2Ccs%2Cunreal%2Ccpp&amp;theme=dark&amp;perline=10">
-    <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=py%2Cfastapi%2Cgo%2Cpostgres%2Cdocker%2Cgit%2Cunity%2Ccs%2Cunreal%2Ccpp&amp;theme=light&amp;perline=10">
-    <img alt="Python, FastAPI, Go, PostgreSQL, Docker, Git, Unity, C#, Unreal Engine, and C++" src="https://skillicons.dev/icons?i=py%2Cfastapi%2Cgo%2Cpostgres%2Cdocker%2Cgit%2Cunity%2Ccs%2Cunreal%2Ccpp&amp;theme=light&amp;perline=10">
+    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=py&amp;theme=dark">
+    <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=py&amp;theme=light">
+    <img height="48" alt="Python" src="https://skillicons.dev/icons?i=py&amp;theme=light">
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./profile/ai-stack-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./profile/ai-stack-light.svg">
+    <img height="48" alt="LLM and LangGraph" src="./profile/ai-stack-light.svg">
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=fastapi%2Cgo%2Cpostgres%2Cdocker%2Cunity%2Ccs%2Cunreal%2Ccpp&amp;theme=dark&amp;perline=8">
+    <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=fastapi%2Cgo%2Cpostgres%2Cdocker%2Cunity%2Ccs%2Cunreal%2Ccpp&amp;theme=light&amp;perline=8">
+    <img height="48" alt="FastAPI, Go, PostgreSQL, Docker, Unity, C#, Unreal Engine, and C++" src="https://skillicons.dev/icons?i=fastapi%2Cgo%2Cpostgres%2Cdocker%2Cunity%2Ccs%2Cunreal%2Ccpp&amp;theme=light&amp;perline=8">
   </picture>
 </p>
 

@@ -1,0 +1,13 @@
+<svg width="108" height="48" viewBox="0 0 108 48" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">LLM and LangGraph</title>
+  <desc id="desc">Visual icons representing large language models and graph-based agent workflows</desc>
+  <rect width="48" height="48" rx="12" fill="#242938" stroke="#30363D"/>
+  <path d="M12 14H36V30H25L19 35V30H12V14Z" stroke="#58A6FF" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="18" cy="22" r="2" fill="#A371F7"/>
+  <circle cx="24" cy="22" r="2" fill="#58A6FF"/>
+  <circle cx="30" cy="22" r="2" fill="#3FB950"/>
+  <rect x="60" width="48" height="48" rx="12" fill="#242938" stroke="#30363D"/>
+  <path d="M72 15L83 11L96 18L91 33L77 36L69 26L72 15Z" stroke="#A371F7" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M72 15L83 24L96 18M83 24L91 33M83 24L77 36M83 11V24M69 26L83 24" stroke="#58A6FF" stroke-width="1.6"/>
+  <circle cx="72" cy="15" r="2.5" fill="#A371F7"/><circle cx="83" cy="11" r="2.5" fill="#58A6FF"/><circle cx="96" cy="18" r="2.5" fill="#A371F7"/><circle cx="91" cy="33" r="2.5" fill="#58A6FF"/><circle cx="77" cy="36" r="2.5" fill="#A371F7"/><circle cx="69" cy="26" r="2.5" fill="#58A6FF"/><circle cx="83" cy="24" r="3" fill="#F0F6FC"/>
+</svg>
