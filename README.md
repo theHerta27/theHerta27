@@ -33,17 +33,10 @@ I build practical software around backend systems and modern AI, with an emphasi
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=py,fastapi,go,postgres,docker,git,unity,cs,unreal,cpp&theme=dark&perline=10">
-    <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=py,fastapi,go,postgres,docker,git,unity,cs,unreal,cpp&theme=light&perline=10">
-    <img alt="Python, FastAPI, Go, PostgreSQL, Docker, Git, Unity, C#, Unreal Engine, and C++" src="https://skillicons.dev/icons?i=py,fastapi,go,postgres,docker,git,unity,cs,unreal,cpp&theme=light&perline=10">
+    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=py%2Cfastapi%2Cgo%2Cpostgres%2Cdocker%2Cgit%2Cunity%2Ccs%2Cunreal%2Ccpp&amp;theme=dark&amp;perline=10">
+    <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=py%2Cfastapi%2Cgo%2Cpostgres%2Cdocker%2Cgit%2Cunity%2Ccs%2Cunreal%2Ccpp&amp;theme=light&amp;perline=10">
+    <img alt="Python, FastAPI, Go, PostgreSQL, Docker, Git, Unity, C#, Unreal Engine, and C++" src="https://skillicons.dev/icons?i=py%2Cfastapi%2Cgo%2Cpostgres%2Cdocker%2Cgit%2Cunity%2Ccs%2Cunreal%2Ccpp&amp;theme=light&amp;perline=10">
   </picture>
-</p>
-
-<p align="center">
-  <strong>Backend</strong> · Python · FastAPI · Go · PostgreSQL · Docker<br>
-  <strong>AI Agent</strong> · LLM · LangGraph · Agent Workflow<br>
-  <strong>Engineering</strong> · Git · pytest<br>
-  <strong>Game Runtime</strong> · Unity / C# · Unreal Engine / C++
 </p>
 
 ---
