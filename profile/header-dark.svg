@@ -1,0 +1,14 @@
+<svg width="1200" height="280" viewBox="0 0 1200 280" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Tan Junlin developer profile</title>
+  <desc id="desc">Backend Development, AI and LLM Applications, Agent Systems, and Software Engineering</desc>
+  <rect x="1" y="1" width="1198" height="278" rx="14" fill="#0D1117" stroke="#30363D" stroke-width="2"/>
+  <circle cx="34" cy="30" r="6" fill="#FF7B72"/>
+  <circle cx="56" cy="30" r="6" fill="#D29922"/>
+  <circle cx="78" cy="30" r="6" fill="#3FB950"/>
+  <text x="106" y="36" fill="#8B949E" font-family="Consolas, Menlo, monospace" font-size="16">~/theHerta27/profile</text>
+  <line x1="24" y1="58" x2="1176" y2="58" stroke="#21262D"/>
+  <text x="600" y="132" text-anchor="middle" fill="#F0F6FC" font-family="Segoe UI, Arial, sans-serif" font-size="52" font-weight="700">TAN JUNLIN</text>
+  <text x="600" y="176" text-anchor="middle" fill="#58A6FF" font-family="Consolas, Menlo, monospace" font-size="21">Backend · AI/LLM · Agent Systems · Software Engineering</text>
+  <line x1="404" y1="205" x2="796" y2="205" stroke="#A371F7" stroke-width="3"/>
+  <text x="600" y="242" text-anchor="middle" fill="#8B949E" font-family="Consolas, Menlo, monospace" font-size="15">XIDIAN UNIVERSITY  /  GRADUATE STUDENT  /  BUILDING PRACTICAL SOFTWARE</text>
+</svg>
