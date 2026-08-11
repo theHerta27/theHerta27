@@ -4,8 +4,6 @@
   <img alt="Tan Junlin — Backend Development, AI/LLM Applications, Agent Systems, and Software Engineering" src="./profile/header-light.svg" width="100%">
 </picture>
 
-<p align="center"><strong>把想法做成系统 · Turn Ideas into Systems</strong></p>
-
 <p align="center">
   <a href="#about">About</a>&nbsp;&nbsp;·&nbsp;&nbsp;
   <a href="#tech-stack">Tech Stack</a>&nbsp;&nbsp;·&nbsp;&nbsp;
@@ -16,22 +14,13 @@
 
 ## About
 
-### `$ whoami`
-
-```text
-Tan Junlin | 把想法做成系统 · Turn Ideas into Systems
-```
-
-### `$ cat .profile`
-
-```text
-name      : Tan Junlin
-education : Master's Student @ Xidian University
-focus     : Backend · AI/LLM Applications · Agent Systems
-currently : Building practical software and learning by doing
-learning  : Go · Backend Systems · AI Engineering
-interests : Software Engineering · Open Source · AI Applications
-```
+<picture>
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./profile/about-mobile-dark.svg">
+  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="./profile/about-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./profile/about-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./profile/about-light.svg">
+  <img alt="Terminal profile for Tan Junlin, a master's student at Xidian University focused on backend, AI/LLM applications, and agent systems, currently building practical AI and backend systems and exploring Go, backend systems, and AI engineering" src="./profile/about-light.svg" width="100%">
+</picture>
 
 ---
 

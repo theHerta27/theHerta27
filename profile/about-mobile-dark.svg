@@ -1,0 +1,39 @@
+<svg width="720" height="710" viewBox="0 0 720 710" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Tan Junlin mobile profile terminal</title>
+  <desc id="desc">Tan Junlin is a master's student at Xidian University focused on backend, AI/LLM applications, and agent systems.</desc>
+  <rect x="1" y="1" width="718" height="708" rx="14" fill="#0E131B" stroke="#2A3545" stroke-width="2"/>
+  <circle cx="34" cy="30" r="6" fill="#FF7B72"/>
+  <circle cx="56" cy="30" r="6" fill="#D29922"/>
+  <circle cx="78" cy="30" r="6" fill="#3FB950"/>
+  <text x="106" y="36" fill="#91A0B5" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="16">theHerta27 / identity</text>
+  <line x1="24" y1="58" x2="696" y2="58" stroke="#202938"/>
+  <circle cx="568" cy="30" r="5" fill="#74C9B1"/>
+  <text x="582" y="36" fill="#91A0B5" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="15">session active</text>
+  <text x="42" y="105" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="26" font-weight="600"><tspan fill="#B39DDB">$</tspan><tspan fill="#7CC4F2"> whoami</tspan></text>
+  <text x="42" y="151" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="23"><tspan fill="#DFE8F3">Tan Junlin</tspan><tspan fill="#91A0B5"> | </tspan><tspan fill="#B39DDB" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22">把想法做成系统</tspan></text>
+  <text x="42" y="187" fill="#B39DDB" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="23">· Turn Ideas into Systems</text>
+  <text x="42" y="245" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="26" font-weight="600"><tspan fill="#B39DDB">$</tspan><tspan fill="#7CC4F2"> cat .profile</tspan></text>
+  <text x="42" y="286" fill="#8CB7D6" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="22">name</text>
+  <text x="166" y="286" fill="#91A0B5" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="22">:</text>
+  <text x="190" y="286" fill="#DFE8F3" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="22">Tan Junlin</text>
+  <text x="42" y="330" fill="#8CB7D6" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="22">education</text>
+  <text x="166" y="330" fill="#91A0B5" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="22">:</text>
+  <text x="190" y="330" fill="#DFE8F3" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="22">Master's Student</text>
+  <text x="190" y="362" fill="#DFE8F3" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="22">@ Xidian University</text>
+  <text x="42" y="406" fill="#8CB7D6" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="22">focus</text>
+  <text x="166" y="406" fill="#91A0B5" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="22">:</text>
+  <text x="190" y="406" fill="#DFE8F3" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="22">Backend · AI/LLM Applications</text>
+  <text x="190" y="438" fill="#DFE8F3" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="22">· Agent Systems</text>
+  <text x="42" y="482" fill="#8CB7D6" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="22">currently</text>
+  <text x="166" y="482" fill="#91A0B5" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="22">:</text>
+  <text x="190" y="482" fill="#74C9B1" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="22">Building practical AI and</text>
+  <text x="190" y="514" fill="#74C9B1" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="22">backend systems</text>
+  <text x="42" y="558" fill="#8CB7D6" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="22">exploring</text>
+  <text x="166" y="558" fill="#91A0B5" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="22">:</text>
+  <text x="190" y="558" fill="#DFE8F3" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="22">Go · Backend Systems</text>
+  <text x="190" y="590" fill="#DFE8F3" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="22">· AI Engineering</text>
+  <text x="42" y="634" fill="#8CB7D6" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="22">interests</text>
+  <text x="166" y="634" fill="#91A0B5" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="22">:</text>
+  <text x="190" y="634" fill="#DFE8F3" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="22">Software Engineering</text>
+  <text x="190" y="666" fill="#DFE8F3" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="22">· Open Source · AI Applications</text>
+</svg>
