@@ -15,7 +15,7 @@ ABOUT_MOBILE_SIZE = (720, 710)
 MESSAGES = (
     "Hi there, I'm Tan Junlin 👋",
     "Building Backend & AI Systems",
-    "知行合一 · Knowledge as action",
+    "让 AI 触手可及 · AI within reach",
 )
 
 TYPE_MS = 70
@@ -239,7 +239,7 @@ def render_about_svg(theme_name: str) -> None:
   <circle cx="1048" cy="30" r="5" fill="{theme['active']}"/>
   <text x="1062" y="36" fill="{theme['secondary']}" font-family="{SVG_MONO_FONT}" font-size="15">session active</text>
   <text x="42" y="105" font-family="{SVG_MONO_FONT}" font-size="24" font-weight="600"><tspan fill="{theme['prompt']}">$</tspan><tspan fill="{theme['accent']}"> whoami</tspan></text>
-  <text x="42" y="148" font-family="{SVG_MONO_FONT}" font-size="22"><tspan fill="{theme['text']}">Tan Junlin</tspan><tspan fill="{theme['secondary']}"> | </tspan><tspan fill="{theme['underline']}" font-family="{SVG_CJK_FONT}" font-size="21">知行合一</tspan><tspan fill="{theme['underline']}" font-family="{SVG_MONO_FONT}"> · Knowledge as action</tspan></text>
+  <text x="42" y="148" font-family="{SVG_MONO_FONT}" font-size="22"><tspan fill="{theme['text']}">Tan Junlin</tspan><tspan fill="{theme['secondary']}"> | </tspan><tspan fill="{theme['underline']}" font-family="{SVG_CJK_FONT}" font-size="21">让 AI 触手可及</tspan><tspan fill="{theme['underline']}" font-family="{SVG_MONO_FONT}"> · AI within reach</tspan></text>
   <text x="42" y="207" font-family="{SVG_MONO_FONT}" font-size="24" font-weight="600"><tspan fill="{theme['prompt']}">$</tspan><tspan fill="{theme['accent']}"> cat .profile</tspan></text>
 {profile_lines}
 </svg>
@@ -287,8 +287,8 @@ def render_about_mobile_svg(theme_name: str) -> None:
   <circle cx="568" cy="30" r="5" fill="{theme['active']}"/>
   <text x="582" y="36" fill="{theme['secondary']}" font-family="{SVG_MONO_FONT}" font-size="15">session active</text>
   <text x="42" y="105" font-family="{SVG_MONO_FONT}" font-size="26" font-weight="600"><tspan fill="{theme['prompt']}">$</tspan><tspan fill="{theme['accent']}"> whoami</tspan></text>
-  <text x="42" y="151" font-family="{SVG_MONO_FONT}" font-size="23"><tspan fill="{theme['text']}">Tan Junlin</tspan><tspan fill="{theme['secondary']}"> | </tspan><tspan fill="{theme['underline']}" font-family="{SVG_CJK_FONT}" font-size="22">知行合一</tspan></text>
-  <text x="42" y="187" fill="{theme['underline']}" font-family="{SVG_MONO_FONT}" font-size="23">· Knowledge as action</text>
+  <text x="42" y="151" font-family="{SVG_MONO_FONT}" font-size="23"><tspan fill="{theme['text']}">Tan Junlin</tspan><tspan fill="{theme['secondary']}"> | </tspan><tspan fill="{theme['underline']}" font-family="{SVG_CJK_FONT}" font-size="22">让 AI 触手可及</tspan></text>
+  <text x="42" y="187" fill="{theme['underline']}" font-family="{SVG_MONO_FONT}" font-size="23">· AI within reach</text>
   <text x="42" y="245" font-family="{SVG_MONO_FONT}" font-size="26" font-weight="600"><tspan fill="{theme['prompt']}">$</tspan><tspan fill="{theme['accent']}"> cat .profile</tspan></text>
 {profile_lines}
 </svg>
@@ -327,9 +327,9 @@ def about_preview_image(theme_name: str) -> Image.Image:
     identity_x = 42 + draw.textlength("Tan Junlin", font=ABOUT_IDENTITY_FONT)
     draw.text((identity_x, 119), " | ", font=ABOUT_IDENTITY_FONT, fill=theme["secondary"])
     identity_x += draw.textlength(" | ", font=ABOUT_IDENTITY_FONT)
-    draw.text((identity_x, 119), "知行合一", font=ABOUT_CJK_FONT, fill=theme["underline"])
-    identity_x += draw.textlength("知行合一", font=ABOUT_CJK_FONT)
-    draw.text((identity_x, 119), " · Knowledge as action", font=ABOUT_IDENTITY_FONT, fill=theme["underline"])
+    draw.text((identity_x, 119), "让 AI 触手可及", font=ABOUT_CJK_FONT, fill=theme["underline"])
+    identity_x += draw.textlength("让 AI 触手可及", font=ABOUT_CJK_FONT)
+    draw.text((identity_x, 119), " · AI within reach", font=ABOUT_IDENTITY_FONT, fill=theme["underline"])
 
     draw.text((42, 180), "$", font=ABOUT_COMMAND_FONT, fill=theme["prompt"])
     draw.text((59, 180), " cat .profile", font=ABOUT_COMMAND_FONT, fill=theme["accent"])
@@ -362,8 +362,8 @@ def about_mobile_preview_image(theme_name: str) -> Image.Image:
     identity_x = 42 + draw.textlength("Tan Junlin", font=ABOUT_IDENTITY_FONT)
     draw.text((identity_x, 121), " | ", font=ABOUT_IDENTITY_FONT, fill=theme["secondary"])
     identity_x += draw.textlength(" | ", font=ABOUT_IDENTITY_FONT)
-    draw.text((identity_x, 121), "知行合一", font=ABOUT_CJK_FONT, fill=theme["underline"])
-    draw.text((42, 157), "· Knowledge as action", font=ABOUT_IDENTITY_FONT, fill=theme["underline"])
+    draw.text((identity_x, 121), "让 AI 触手可及", font=ABOUT_CJK_FONT, fill=theme["underline"])
+    draw.text((42, 157), "· AI within reach", font=ABOUT_IDENTITY_FONT, fill=theme["underline"])
 
     draw.text((42, 216), "$", font=ABOUT_COMMAND_FONT, fill=theme["prompt"])
     draw.text((61, 216), " cat .profile", font=ABOUT_COMMAND_FONT, fill=theme["accent"])
