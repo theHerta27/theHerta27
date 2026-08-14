@@ -10,8 +10,8 @@
   <circle cx="568" cy="30" r="5" fill="#3D8F79"/>
   <text x="582" y="36" fill="#62748A" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="15">session active</text>
   <text x="42" y="105" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="26" font-weight="600"><tspan fill="#8A78C2">$</tspan><tspan fill="#3F7FB7"> whoami</tspan></text>
-  <text x="42" y="151" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="23"><tspan fill="#24324A">Tan Junlin</tspan><tspan fill="#62748A"> | </tspan><tspan fill="#8A78C2" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22">把想法做成系统</tspan></text>
-  <text x="42" y="187" fill="#8A78C2" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="23">· Turn Ideas into Systems</text>
+  <text x="42" y="151" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="23"><tspan fill="#24324A">Tan Junlin</tspan><tspan fill="#62748A"> | </tspan><tspan fill="#8A78C2" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22">知行合一</tspan></text>
+  <text x="42" y="187" fill="#8A78C2" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="23">· Knowledge as action</text>
   <text x="42" y="245" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="26" font-weight="600"><tspan fill="#8A78C2">$</tspan><tspan fill="#3F7FB7"> cat .profile</tspan></text>
   <text x="42" y="286" fill="#587390" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="22">name</text>
   <text x="166" y="286" fill="#62748A" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="22">:</text>
