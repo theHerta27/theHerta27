@@ -6,6 +6,7 @@ on:
     paths:
       - README.md
       - .github/workflows/profile-stats.yml
+      - scripts/patch_profile_contributions.py
   schedule:
     - cron: "17 */6 * * *"
   workflow_dispatch:
@@ -29,7 +30,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@e52ecffb9b500c9f8532aff89937973d64706446 # v2
         with:
           card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true&hide_rank=true&hide=commits&custom_title=Public%20GitHub%20Stats&theme=transparent&hide_border=true&disable_animations=true
+          options: username=${{ github.repository_owner }}&show_icons=true&hide_rank=true&hide=commits&custom_title=GitHub%20Activity&theme=transparent&hide_border=true&disable_animations=true
           path: profile/stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           fail_on_error: true
@@ -47,10 +48,31 @@ jobs:
         uses: stats-organization/github-readme-stats-action@e52ecffb9b500c9f8532aff89937973d64706446 # v2
         with:
           card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true&hide_rank=true&hide=commits&custom_title=Public%20GitHub%20Stats&theme=github_dark&bg_color=00000000&hide_border=true&disable_animations=true
+          options: username=${{ github.repository_owner }}&show_icons=true&hide_rank=true&hide=commits&custom_title=GitHub%20Activity&theme=github_dark&bg_color=00000000&hide_border=true&disable_animations=true
           path: profile/stats-dark.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           fail_on_error: true
+
+      - name: Read native contribution total
+        id: contributions
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROFILE_USER: ${{ github.repository_owner }}
+        run: |
+          total=$(gh api graphql \
+            -f query='query($login: String!) { user(login: $login) { contributionsCollection { contributionCalendar { totalContributions } } } }' \
+            -F login="$PROFILE_USER" \
+            --jq '.data.user.contributionsCollection.contributionCalendar.totalContributions')
+          test -n "$total"
+          echo "total=$total" >> "$GITHUB_OUTPUT"
+
+      - name: Add native contribution total to stats cards
+        run: |
+          python scripts/patch_profile_contributions.py \
+            --total "${{ steps.contributions.outputs.total }}" \
+            profile/stats.svg \
+            profile/stats-dark.svg
 
       - name: Generate dark top languages
         uses: stats-organization/github-readme-stats-action@e52ecffb9b500c9f8532aff89937973d64706446 # v2

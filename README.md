@@ -64,7 +64,7 @@
   </picture>
 </div>
 
-<p align="center"><sub>Cards use public repository data. The native GitHub contribution graph below is the authoritative contribution total. Top Languages reflects repository composition, not proficiency.</sub></p>
+<p align="center"><sub>Contributions mirrors GitHub's native one-year total; Stars, PRs, Issues, and Top Languages use public repository data. Top Languages reflects repository composition, not proficiency.</sub></p>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/theHerta27/theHerta27/output/github-contribution-grid-snake-dark.svg">
