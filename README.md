@@ -28,19 +28,22 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=py&amp;theme=dark">
-    <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=py&amp;theme=light">
-    <img height="48" alt="Python" src="https://skillicons.dev/icons?i=py&amp;theme=light">
+    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=py%2Cc%2Ccpp%2Cjs%2Cts%2Cgo%2Ccs%2Cfastapi&amp;theme=dark&amp;perline=8">
+    <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=py%2Cc%2Ccpp%2Cjs%2Cts%2Cgo%2Ccs%2Cfastapi&amp;theme=light&amp;perline=8">
+    <img height="48" alt="Python, C, C++, JavaScript, TypeScript, Go, C#, and FastAPI" src="https://skillicons.dev/icons?i=py%2Cc%2Ccpp%2Cjs%2Cts%2Cgo%2Ccs%2Cfastapi&amp;theme=light&amp;perline=8">
   </picture>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./profile/ai-stack-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="./profile/ai-stack-light.svg">
     <img height="48" alt="LLM and LangGraph" src="./profile/ai-stack-light.svg">
   </picture>
+</p>
+
+<p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=fastapi%2Cgo%2Cpostgres%2Cdocker%2Cunity%2Ccs%2Cunreal%2Ccpp&amp;theme=dark&amp;perline=8">
-    <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=fastapi%2Cgo%2Cpostgres%2Cdocker%2Cunity%2Ccs%2Cunreal%2Ccpp&amp;theme=light&amp;perline=8">
-    <img height="48" alt="FastAPI, Go, PostgreSQL, Docker, Unity, C#, Unreal Engine, and C++" src="https://skillicons.dev/icons?i=fastapi%2Cgo%2Cpostgres%2Cdocker%2Cunity%2Ccs%2Cunreal%2Ccpp&amp;theme=light&amp;perline=8">
+    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=git%2Cgithub%2Cdocker%2Clinux%2Cvscode%2Cpostgres%2Cmysql%2Credis%2Cunity%2Cunreal&amp;theme=dark&amp;perline=10">
+    <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=git%2Cgithub%2Cdocker%2Clinux%2Cvscode%2Cpostgres%2Cmysql%2Credis%2Cunity%2Cunreal&amp;theme=light&amp;perline=10">
+    <img height="48" alt="Git, GitHub, Docker, Linux, Visual Studio Code, PostgreSQL, MySQL, Redis, Unity, and Unreal Engine" src="https://skillicons.dev/icons?i=git%2Cgithub%2Cdocker%2Clinux%2Cvscode%2Cpostgres%2Cmysql%2Credis%2Cunity%2Cunreal&amp;theme=light&amp;perline=10">
   </picture>
 </p>
 
@@ -61,7 +64,7 @@
   </picture>
 </div>
 
-<p align="center"><sub>Top Languages reflects public repository composition, not proficiency.</sub></p>
+<p align="center"><sub>Cards use public repository data. The native GitHub contribution graph below is the authoritative contribution total. Top Languages reflects repository composition, not proficiency.</sub></p>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/theHerta27/theHerta27/output/github-contribution-grid-snake-dark.svg">
