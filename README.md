@@ -28,22 +28,17 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=py%2Cc%2Ccpp%2Cjs%2Cts%2Cgo%2Ccs%2Cfastapi&amp;theme=dark&amp;perline=8">
-    <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=py%2Cc%2Ccpp%2Cjs%2Cts%2Cgo%2Ccs%2Cfastapi&amp;theme=light&amp;perline=8">
-    <img height="48" alt="Python, C, C++, JavaScript, TypeScript, Go, C#, and FastAPI" src="https://skillicons.dev/icons?i=py%2Cc%2Ccpp%2Cjs%2Cts%2Cgo%2Ccs%2Cfastapi&amp;theme=light&amp;perline=8">
-  </picture>
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./profile/ai-stack-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="./profile/ai-stack-light.svg">
-    <img height="48" alt="LLM and LangGraph" src="./profile/ai-stack-light.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=go%2Cpy%2Cts%2Cc&amp;theme=dark&amp;perline=4">
+    <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=go%2Cpy%2Cts%2Cc&amp;theme=light&amp;perline=4">
+    <img height="48" alt="Go, Python, TypeScript, and C" src="https://skillicons.dev/icons?i=go%2Cpy%2Cts%2Cc&amp;theme=light&amp;perline=4">
   </picture>
 </p>
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=git%2Cgithub%2Cdocker%2Clinux%2Cvscode%2Cpostgres%2Cmysql%2Credis%2Cunity%2Cunreal&amp;theme=dark&amp;perline=10">
-    <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=git%2Cgithub%2Cdocker%2Clinux%2Cvscode%2Cpostgres%2Cmysql%2Credis%2Cunity%2Cunreal&amp;theme=light&amp;perline=10">
-    <img height="48" alt="Git, GitHub, Docker, Linux, Visual Studio Code, PostgreSQL, MySQL, Redis, Unity, and Unreal Engine" src="https://skillicons.dev/icons?i=git%2Cgithub%2Cdocker%2Clinux%2Cvscode%2Cpostgres%2Cmysql%2Credis%2Cunity%2Cunreal&amp;theme=light&amp;perline=10">
+    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=git%2Cgithub%2Cdocker%2Clinux%2Cvscode%2Cpostgres%2Cmysql%2Credis&amp;theme=dark&amp;perline=8">
+    <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=git%2Cgithub%2Cdocker%2Clinux%2Cvscode%2Cpostgres%2Cmysql%2Credis&amp;theme=light&amp;perline=8">
+    <img height="48" alt="Git, GitHub, Docker, Linux, Visual Studio Code, PostgreSQL, MySQL, and Redis" src="https://skillicons.dev/icons?i=git%2Cgithub%2Cdocker%2Clinux%2Cvscode%2Cpostgres%2Cmysql%2Credis&amp;theme=light&amp;perline=8">
   </picture>
 </p>
 
