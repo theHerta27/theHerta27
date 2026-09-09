@@ -1,16 +1,14 @@
 <picture>
+  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="./profile/header-dark.svg">
+  <source media="(prefers-reduced-motion: reduce)" srcset="./profile/header-light.svg">
   <source media="(prefers-color-scheme: dark)" srcset="./profile/header-dark.gif">
   <source media="(prefers-color-scheme: light)" srcset="./profile/header-light.gif">
-  <img alt="Tan Junlin — Backend Development, AI/LLM Applications, Agent Systems, and Software Engineering" src="./profile/header-light.svg" width="100%">
+  <img alt="Hi there, I'm Tan Junlin 👋 · 技术改变生活 · Code Changes Life · Keep Building, Keep Growing ✨" src="./profile/header-light.svg" width="100%">
 </picture>
 
-<p align="center">
-  <a href="#about">About</a>&nbsp;&nbsp;·&nbsp;&nbsp;
-  <a href="#tech-stack">Tech Stack</a>&nbsp;&nbsp;·&nbsp;&nbsp;
-  <a href="#github-activity">GitHub Activity</a>
-</p>
+西安电子科技大学硕士在读 · AI 应用与 Agent 开发 · Python / Go
 
----
+[关于我](#about) · [技术栈](#技术栈) · [GitHub Activity](#github-activity) · [联系方式](#联系方式)
 
 ## About
 
@@ -19,30 +17,37 @@
   <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="./profile/about-mobile-light.svg">
   <source media="(prefers-color-scheme: dark)" srcset="./profile/about-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="./profile/about-light.svg">
-  <img alt="Terminal profile for Tan Junlin, a master's student at Xidian University focused on backend, AI/LLM applications, and agent systems, currently building practical AI and backend systems and exploring Go, backend systems, and AI engineering" src="./profile/about-light.svg" width="100%">
+  <img alt="Tan Junlin；西安电子科技大学 · 硕士在读；AI 应用开发 · Agent 工程实践；Python · Go" src="./profile/about-light.svg" width="100%">
 </picture>
 
----
+## 技术栈
 
-## Tech Stack
+### AI 应用
 
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=go%2Cpy%2Cts%2Cc&amp;theme=dark&amp;perline=4">
-    <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=go%2Cpy%2Cts%2Cc&amp;theme=light&amp;perline=4">
-    <img height="48" alt="Go, Python, TypeScript, and C" src="https://skillicons.dev/icons?i=go%2Cpy%2Cts%2Cc&amp;theme=light&amp;perline=4">
-  </picture>
-</p>
+Python · FastAPI · Pydantic · OpenAI-compatible API
 
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=git%2Cgithub%2Cdocker%2Clinux%2Cvscode%2Cpostgres%2Cmysql%2Credis&amp;theme=dark&amp;perline=8">
-    <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=git%2Cgithub%2Cdocker%2Clinux%2Cvscode%2Cpostgres%2Cmysql%2Credis&amp;theme=light&amp;perline=8">
-    <img height="48" alt="Git, GitHub, Docker, Linux, Visual Studio Code, PostgreSQL, MySQL, and Redis" src="https://skillicons.dev/icons?i=git%2Cgithub%2Cdocker%2Clinux%2Cvscode%2Cpostgres%2Cmysql%2Credis&amp;theme=light&amp;perline=8">
-  </picture>
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=py,fastapi&amp;theme=dark">
+  <img alt="Python、FastAPI" src="https://skillicons.dev/icons?i=py,fastapi&amp;theme=light" height="40">
+</picture>
 
----
+### 后端开发
+
+Go · MySQL · PostgreSQL · Redis
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=go,mysql,postgres,redis&amp;theme=dark">
+  <img alt="Go、MySQL、PostgreSQL、Redis" src="https://skillicons.dev/icons?i=go,mysql,postgres,redis&amp;theme=light" height="40">
+</picture>
+
+### 工程工具
+
+Git · Linux · Docker · GitHub Actions · Prometheus · Grafana
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=git,linux,docker,githubactions,prometheus,grafana&amp;theme=dark">
+  <img alt="Git、Linux、Docker、GitHub Actions、Prometheus、Grafana" src="https://skillicons.dev/icons?i=git,linux,docker,githubactions,prometheus,grafana&amp;theme=light" height="40">
+</picture>
 
 ## GitHub Activity
 
@@ -50,26 +55,33 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./profile/stats-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="./profile/stats.svg">
-    <img height="165" alt="Tan Junlin's GitHub stats" src="./profile/stats.svg">
+    <img height="165" alt="Tan Junlin 的 GitHub 活动统计" src="./profile/stats.svg">
   </picture>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./profile/top-langs-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="./profile/top-langs.svg">
-    <img height="165" alt="Languages used across Tan Junlin's public repositories" src="./profile/top-langs.svg">
+    <img height="165" alt="Tan Junlin 公开仓库的语言构成" src="./profile/top-langs.svg">
   </picture>
 </div>
 
-<p align="center"><sub>Contributions mirrors GitHub's native one-year total; Stars, PRs, Issues, and Top Languages use public repository data. Top Languages reflects repository composition, not proficiency.</sub></p>
+<p align="center"><sub>贡献数取自 GitHub 近一年统计，其他数据来自公开仓库；语言占比反映仓库构成，不代表熟练程度。</sub></p>
+
+## Contribution Snake
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/theHerta27/theHerta27/output/github-contribution-grid-snake-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/theHerta27/theHerta27/output/github-contribution-grid-snake.svg">
-  <img alt="GitHub contribution snake" src="https://raw.githubusercontent.com/theHerta27/theHerta27/output/github-contribution-grid-snake.svg" width="100%">
+  <img alt="GitHub 贡献日历动画" src="https://raw.githubusercontent.com/theHerta27/theHerta27/output/github-contribution-grid-snake.svg" width="100%">
 </picture>
 
----
+## 联系方式
 
-<p align="center">
-  <strong>Currently building at <a href="https://github.com/theHerta27">@theHerta27</a></strong><br>
-  <sub>Backend systems · AI applications · Agent-based engineering</sub>
-</p>
+个人博客：[https://herta27.top/](https://herta27.top/)
+
+邮箱：[1404758168@qq.com](mailto:1404758168@qq.com)
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./profile/footer-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./profile/footer-light.svg">
+  <img alt="Keep Coding 🚀 · 技术改变生活" src="./profile/footer-light.svg" width="100%">
+</picture>

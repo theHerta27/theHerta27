@@ -30,7 +30,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@e52ecffb9b500c9f8532aff89937973d64706446 # v2
         with:
           card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true&hide_rank=true&hide=commits&custom_title=GitHub%20Activity&theme=transparent&hide_border=true&disable_animations=true
+          options: username=${{ github.repository_owner }}&show_icons=true&hide_rank=true&hide=commits&custom_title=GitHub%20Activity&bg_color=F7F9FC&title_color=3F7FB7&text_color=24324A&icon_color=3F7FB7&border_color=CAD6E4&hide_border=false&disable_animations=true
           path: profile/stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           fail_on_error: true
@@ -39,7 +39,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@e52ecffb9b500c9f8532aff89937973d64706446 # v2
         with:
           card: top-langs
-          options: username=${{ github.repository_owner }}&layout=compact&langs_count=6&theme=transparent&hide_border=true&disable_animations=true
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=6&bg_color=F7F9FC&title_color=3F7FB7&text_color=24324A&border_color=CAD6E4&hide_border=false&disable_animations=true
           path: profile/top-langs.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           fail_on_error: true
@@ -48,7 +48,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@e52ecffb9b500c9f8532aff89937973d64706446 # v2
         with:
           card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true&hide_rank=true&hide=commits&custom_title=GitHub%20Activity&theme=github_dark&bg_color=00000000&hide_border=true&disable_animations=true
+          options: username=${{ github.repository_owner }}&show_icons=true&hide_rank=true&hide=commits&custom_title=GitHub%20Activity&bg_color=0E131B&title_color=7CC4F2&text_color=DFE8F3&icon_color=7CC4F2&border_color=2A3545&hide_border=false&disable_animations=true
           path: profile/stats-dark.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           fail_on_error: true
@@ -78,7 +78,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@e52ecffb9b500c9f8532aff89937973d64706446 # v2
         with:
           card: top-langs
-          options: username=${{ github.repository_owner }}&layout=compact&langs_count=6&theme=github_dark&bg_color=00000000&hide_border=true&disable_animations=true
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=6&bg_color=0E131B&title_color=7CC4F2&text_color=DFE8F3&border_color=2A3545&hide_border=false&disable_animations=true
           path: profile/top-langs-dark.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           fail_on_error: true
