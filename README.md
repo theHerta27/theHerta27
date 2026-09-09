@@ -1,12 +1,21 @@
+<p align="center">
 <picture>
+  <source media="(max-width: 600px) and (prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="./profile/header-mobile-dark.svg">
+  <source media="(max-width: 600px) and (prefers-reduced-motion: reduce)" srcset="./profile/header-mobile-light.svg">
   <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="./profile/header-dark.svg">
   <source media="(prefers-reduced-motion: reduce)" srcset="./profile/header-light.svg">
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./profile/header-mobile-dark.gif">
+  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="./profile/header-mobile-light.gif">
   <source media="(prefers-color-scheme: dark)" srcset="./profile/header-dark.gif">
   <source media="(prefers-color-scheme: light)" srcset="./profile/header-light.gif">
   <img alt="Hi there, I'm Tan Junlin 👋 · 技术改变生活 · Code Changes Life · Keep Building, Keep Growing ✨" src="./profile/header-light.svg" width="100%">
 </picture>
+</p>
 
-西安电子科技大学硕士在读 · AI 应用与 Agent 开发 · Python / Go
+<p align="center">
+  <a href="https://herta27.top/"><img src="./profile/badge-blog.svg" alt="个人博客：herta27.top" height="32"></a>
+  <a href="mailto:1404758168@qq.com"><img src="./profile/badge-email.svg" alt="联系我：1404758168@qq.com" height="32"></a>
+</p>
 
 [关于我](#about) · [技术栈](#技术栈) · [GitHub Activity](#github-activity) · [联系方式](#联系方式)
 

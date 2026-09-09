@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="170" height="38" viewBox="0 0 170 38" role="img" aria-label="联系我：EMAIL">
+  <title>联系我：EMAIL</title>
+  <rect width="170" height="38" rx="5" fill="#142338"/>
+  <path d="M80 0 H165 Q170 0 170 5 V33 Q170 38 165 38 H80 Z" fill="#C4B5FD"/>
+  <text x="40.0" y="24" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="14" font-weight="700">联系我</text>
+  <text x="125.0" y="24" text-anchor="middle" fill="#142338" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="15" font-weight="700">EMAIL</text>
+</svg>

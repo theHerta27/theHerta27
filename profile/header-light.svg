@@ -7,7 +7,7 @@
   <circle cx="78" cy="30" r="6" fill="#3FB950"/>
   <text x="106" y="36" fill="#62748A" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="16">theHerta27 / profile</text>
   <line x1="24" y1="58" x2="1176" y2="58" stroke="#E2E8F0"/>
-  <text x="600" y="106" text-anchor="middle" fill="#3F7FB7" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace, Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="30">Hi there, I'm Tan Junlin 👋</text>
-  <text x="600" y="148" text-anchor="middle" fill="#24324A" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace, Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="26">技术改变生活 · Code Changes Life</text>
-  <text x="600" y="188" text-anchor="middle" fill="#62748A" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace, Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24">Keep Building, Keep Growing ✨</text>
+  <text x="600.0" y="102" text-anchor="middle" fill="#00CFF1" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace, Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="48" font-weight="700">Hi there, I'm Tan Junlin 👋</text>
+  <text x="600.0" y="148" text-anchor="middle" fill="#24324A" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace, Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="30" font-weight="700">技术改变生活 · Code Changes Life</text>
+  <text x="600.0" y="194" text-anchor="middle" fill="#24324A" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace, Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="30" font-weight="700">Keep Building, Keep Growing ✨</text>
 </svg>

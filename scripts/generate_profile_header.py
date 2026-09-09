@@ -10,6 +10,7 @@ from PIL import Image, ImageDraw, ImageFont
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT_DIR = ROOT / "profile"
 HEADER_SIZE = (1200, 220)
+HEADER_MOBILE_SIZE = (720, 270)
 ABOUT_SIZE = (1200, 350)
 ABOUT_MOBILE_SIZE = (720, 440)
 FOOTER_SIZE = (1200, 200)
@@ -30,10 +31,10 @@ FOOTER_SUBTITLE = "技术改变生活"
 
 TYPE_MS = 70
 DELETE_MS = 40
-HOLD_FRAME_MS = 400
+HOLD_FRAME_MS = 500
 GAP_MS = 300
-TEXT_Y = 105
-CURSOR_HEIGHT = 38
+TEXT_Y = 95
+CURSOR_HEIGHT = 56
 CURSOR_GAP = 5
 
 
@@ -43,6 +44,7 @@ THEMES = {
         "border": "#CAD6E4",
         "rule": "#E2E8F0",
         "accent": "#3F7FB7",
+        "headline": "#00CFF1",
         "secondary": "#62748A",
         "underline": "#8A78C2",
         "prompt": "#8A78C2",
@@ -55,6 +57,7 @@ THEMES = {
         "border": "#2A3545",
         "rule": "#202938",
         "accent": "#7CC4F2",
+        "headline": "#00CFF1",
         "secondary": "#91A0B5",
         "underline": "#B39DDB",
         "prompt": "#B39DDB",
@@ -73,9 +76,10 @@ def font(name: str, size: int) -> ImageFont.FreeTypeFont:
     return ImageFont.truetype(str(Path("C:/Windows/Fonts") / name), size)
 
 
-ASCII_FONT = font("CascadiaMono.ttf", 34)
-CJK_FONT = font("msyh.ttc", 32)
-EMOJI_FONT = font("seguiemj.ttf", 32)
+ASCII_FONT = font("CascadiaMono.ttf", 52)
+ASCII_FONT.set_variation_by_axes([700])
+CJK_FONT = font("msyhbd.ttc", 50)
+EMOJI_FONT = font("seguiemj.ttf", 48)
 PATH_FONT = font("consola.ttf", 16)
 
 
@@ -111,16 +115,26 @@ def draw_mixed_text(draw: ImageDraw.ImageDraw, position: tuple[float, int], text
     return x
 
 
-def base_frame(theme: dict[str, str]) -> Image.Image:
-    image = Image.new("RGB", HEADER_SIZE, theme["background"])
+def base_frame(theme: dict[str, str], mobile: bool = False) -> Image.Image:
+    width, height = HEADER_MOBILE_SIZE if mobile else HEADER_SIZE
+    image = Image.new("RGB", (width, height), theme["background"])
     draw = ImageDraw.Draw(image)
-    draw.rounded_rectangle((1, 1, HEADER_SIZE[0] - 2, HEADER_SIZE[1] - 2), radius=14, fill=theme["background"], outline=theme["border"], width=2)
+    draw.rounded_rectangle((1, 1, width - 2, height - 2), radius=14, fill=theme["background"], outline=theme["border"], width=2)
     for x, color in WINDOW_LIGHTS:
         draw.ellipse((x - 6, 24, x + 6, 36), fill=color)
     draw.text((106, 19), "theHerta27 / profile", font=PATH_FONT, fill=theme["secondary"])
-    draw.line((24, 58, 1176, 58), fill=theme["rule"], width=1)
-    draw.line((460, 180, 740, 180), fill=theme["underline"], width=3)
+    draw.line((24, 58, width - 24, 58), fill=theme["rule"], width=1)
+    draw.line((width / 2 - 140, height - 28, width / 2 + 140, height - 28), fill=theme["underline"], width=3)
     return image
+
+
+def message_lines(message: str, mobile: bool) -> list[str]:
+    if not mobile:
+        return [message]
+    # Break at semantic boundaries; every character still comes from MESSAGES.
+    marker = "I'm " if "I'm " in message else " · " if " · " in message else ", "
+    split = message.index(marker) + len(marker)
+    return [message[:split], message[split:]]
 
 
 def message_frame(
@@ -132,29 +146,37 @@ def message_frame(
 ) -> Image.Image:
     frame = background.copy().convert("RGBA")
     draw = ImageDraw.Draw(frame)
-    start_x = (HEADER_SIZE[0] - text_width(draw, full_message)) / 2
-    cursor_x = draw_mixed_text(draw, (start_x, TEXT_Y), visible_message, theme["accent"])
+    mobile = background.size == HEADER_MOBILE_SIZE
+    consumed = 0
+    cursor_x, cursor_y = 0.0, TEXT_Y
+    for index, line in enumerate(message_lines(full_message, mobile)):
+        start_x = (background.width - text_width(draw, line)) / 2
+        if start_x < 24:
+            raise ValueError(f"Header text overflows: {line}")
+        y = (85 + index * 72) if mobile else TEXT_Y
+        count = max(0, min(len(line), len(visible_message) - consumed))
+        end_x = draw_mixed_text(draw, (start_x, y), line[:count], theme["headline"])
+        if len(visible_message) >= consumed:
+            cursor_x, cursor_y = end_x, y
+        consumed += len(line)
     if cursor_visible:
         draw.rounded_rectangle(
-            (cursor_x + CURSOR_GAP, TEXT_Y + 1, cursor_x + CURSOR_GAP + 3, TEXT_Y + CURSOR_HEIGHT),
+            (cursor_x + CURSOR_GAP, cursor_y + 5, cursor_x + CURSOR_GAP + 5, cursor_y + CURSOR_HEIGHT),
             radius=1,
-            fill=theme["accent"],
+            fill=theme["headline"],
         )
     return frame.convert("P", palette=Image.Palette.ADAPTIVE)
 
 
-def render_header_gif(theme_name: str) -> None:
+def render_header_gif(theme_name: str, mobile: bool = False) -> None:
     theme = THEMES[theme_name]
-    background = base_frame(theme)
+    background = base_frame(theme, mobile)
     frames: list[Image.Image] = []
     durations: list[int] = []
 
-    for message in MESSAGES:
-        for visible_count in range(1, len(message) + 1):
-            frames.append(message_frame(background, theme, message, message[:visible_count], True))
-            durations.append(TYPE_MS)
-
-        for cursor_visible in (False, True, False):
+    for index, message in enumerate(MESSAGES):
+        # Start with the complete greeting, including for clients showing frame 0 only.
+        for cursor_visible in (False, True, False, True, False):
             frames.append(message_frame(background, theme, message, message, cursor_visible))
             durations.append(HOLD_FRAME_MS)
 
@@ -165,7 +187,13 @@ def render_header_gif(theme_name: str) -> None:
         frames.append(message_frame(background, theme, message, "", False))
         durations.append(GAP_MS)
 
-    output = OUTPUT_DIR / f"header-{theme_name}.gif"
+        next_message = MESSAGES[(index + 1) % len(MESSAGES)]
+        for visible_count in range(1, len(next_message) + 1):
+            frames.append(message_frame(background, theme, next_message, next_message[:visible_count], True))
+            durations.append(TYPE_MS)
+
+    suffix = f"mobile-{theme_name}" if mobile else theme_name
+    output = OUTPUT_DIR / f"header-{suffix}.gif"
     frames[0].save(
         output,
         save_all=True,
@@ -192,20 +220,29 @@ def svg_window_chrome(theme: dict[str, str], label: str, width: int, height: int
   <line x1="24" y1="58" x2="{width - 24}" y2="58" stroke="{theme['rule']}"/>"""
 
 
-def render_header_svg(theme_name: str) -> None:
+def render_header_svg(theme_name: str, mobile: bool = False) -> None:
     theme = THEMES[theme_name]
     title = "Tan Junlin developer profile"
     description = " / ".join(MESSAGES)
-    content = f"""<svg width="{HEADER_SIZE[0]}" height="{HEADER_SIZE[1]}" viewBox="0 0 {HEADER_SIZE[0]} {HEADER_SIZE[1]}" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+    width, height = (720, 370) if mobile else HEADER_SIZE
+    lines = []
+    y = 102
+    for index, message in enumerate(MESSAGES):
+        for line in message_lines(message, mobile):
+            size = (42 if mobile else 48) if index == 0 else (32 if mobile else 30)
+            color = theme['headline'] if index == 0 else theme['text']
+            lines.append(f'  <text x="{width / 2}" y="{y}" text-anchor="middle" fill="{color}" font-family="{SVG_MONO_FONT}, {SVG_CJK_FONT}" font-size="{size}" font-weight="700">{escape(line)}</text>')
+            y += 44 if mobile else 46
+    text_elements = "\n".join(lines)
+    content = f"""<svg width="{width}" height="{height}" viewBox="0 0 {width} {height}" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">{escape(title)}</title>
   <desc id="desc">{escape(description)}</desc>
-{svg_window_chrome(theme, 'theHerta27 / profile', HEADER_SIZE[0], HEADER_SIZE[1])}
-  <text x="600" y="106" text-anchor="middle" fill="{theme['accent']}" font-family="{SVG_MONO_FONT}, {SVG_CJK_FONT}" font-size="30">{escape(MESSAGES[0])}</text>
-  <text x="600" y="148" text-anchor="middle" fill="{theme['text']}" font-family="{SVG_MONO_FONT}, {SVG_CJK_FONT}" font-size="26">{escape(MESSAGES[1])}</text>
-  <text x="600" y="188" text-anchor="middle" fill="{theme['secondary']}" font-family="{SVG_MONO_FONT}, {SVG_CJK_FONT}" font-size="24">{escape(MESSAGES[2])}</text>
+{svg_window_chrome(theme, 'theHerta27 / profile', width, height)}
+{text_elements}
 </svg>
 """
-    output = OUTPUT_DIR / f"header-{theme_name}.svg"
+    suffix = f"mobile-{theme_name}" if mobile else theme_name
+    output = OUTPUT_DIR / f"header-{suffix}.svg"
     output.write_text(content, encoding="utf-8", newline="\n")
     print(f"generated {output.relative_to(ROOT)} ({output.stat().st_size} bytes)")
 
@@ -320,9 +357,27 @@ def render_preview(output: Path) -> None:
     print(f"generated preview {output} ({output.stat().st_size} bytes)")
 
 
+def render_badges() -> None:
+    for name, label, value, color, width, split in (
+        ("blog", "个人博客", "herta27.top", "#65D9FF", 232, 92),
+        ("email", "联系我", "EMAIL", "#C4B5FD", 170, 80),
+    ):
+        content = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="38" viewBox="0 0 {width} 38" role="img" aria-label="{label}：{value}">
+  <title>{label}：{value}</title>
+  <rect width="{width}" height="38" rx="5" fill="#142338"/>
+  <path d="M{split} 0 H{width - 5} Q{width} 0 {width} 5 V33 Q{width} 38 {width - 5} 38 H{split} Z" fill="{color}"/>
+  <text x="{split / 2}" y="24" text-anchor="middle" fill="#FFFFFF" font-family="{SVG_CJK_FONT}" font-size="14" font-weight="700">{label}</text>
+  <text x="{(split + width) / 2}" y="24" text-anchor="middle" fill="#142338" font-family="{SVG_MONO_FONT}" font-size="15" font-weight="700">{value}</text>
+</svg>
+'''
+        (OUTPUT_DIR / f"badge-{name}.svg").write_text(content, encoding="utf-8", newline="\n")
+
+
 def render(theme_name: str) -> None:
     render_header_gif(theme_name)
     render_header_svg(theme_name)
+    render_header_gif(theme_name, mobile=True)
+    render_header_svg(theme_name, mobile=True)
     render_about_svg(theme_name)
     render_about_svg(theme_name, mobile=True)
     render_footer_svg(theme_name)
@@ -335,6 +390,7 @@ def main() -> None:
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     render("light")
     render("dark")
+    render_badges()
     if args.preview:
         render_preview(args.preview)
 

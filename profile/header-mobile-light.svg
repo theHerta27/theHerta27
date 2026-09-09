@@ -1,0 +1,16 @@
+<svg width="720" height="370" viewBox="0 0 720 370" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Tan Junlin developer profile</title>
+  <desc id="desc">Hi there, I'm Tan Junlin 👋 / 技术改变生活 · Code Changes Life / Keep Building, Keep Growing ✨</desc>
+  <rect x="1" y="1" width="718" height="368" rx="14" fill="#F7F9FC" stroke="#CAD6E4" stroke-width="2"/>
+  <circle cx="34" cy="30" r="6" fill="#FF7B72"/>
+  <circle cx="56" cy="30" r="6" fill="#D29922"/>
+  <circle cx="78" cy="30" r="6" fill="#3FB950"/>
+  <text x="106" y="36" fill="#62748A" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="16">theHerta27 / profile</text>
+  <line x1="24" y1="58" x2="696" y2="58" stroke="#E2E8F0"/>
+  <text x="360.0" y="102" text-anchor="middle" fill="#00CFF1" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace, Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="42" font-weight="700">Hi there, I'm </text>
+  <text x="360.0" y="146" text-anchor="middle" fill="#00CFF1" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace, Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="42" font-weight="700">Tan Junlin 👋</text>
+  <text x="360.0" y="190" text-anchor="middle" fill="#24324A" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace, Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="32" font-weight="700">技术改变生活 · </text>
+  <text x="360.0" y="234" text-anchor="middle" fill="#24324A" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace, Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="32" font-weight="700">Code Changes Life</text>
+  <text x="360.0" y="278" text-anchor="middle" fill="#24324A" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace, Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="32" font-weight="700">Keep Building, </text>
+  <text x="360.0" y="322" text-anchor="middle" fill="#24324A" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace, Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="32" font-weight="700">Keep Growing ✨</text>
+</svg>
