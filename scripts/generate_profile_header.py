@@ -360,7 +360,7 @@ def render_preview(output: Path) -> None:
 def render_badges() -> None:
     for name, label, value, color, width, split in (
         ("blog", "个人博客", "herta27.top", "#65D9FF", 232, 92),
-        ("email", "联系我", "EMAIL", "#C4B5FD", 170, 80),
+        ("email", "联系我", "1404758168@qq.com", "#C4B5FD", 260, 80),
     ):
         content = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="38" viewBox="0 0 {width} 38" role="img" aria-label="{label}：{value}">
   <title>{label}：{value}</title>
