@@ -8,55 +8,60 @@
   <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="./profile/header-mobile-light.gif">
   <source media="(prefers-color-scheme: dark)" srcset="./profile/header-dark.gif">
   <source media="(prefers-color-scheme: light)" srcset="./profile/header-light.gif">
-  <img alt="Hi there, I'm Tan Junlin 👋 · 技术改变生活 · Code Changes Life · Keep Building, Keep Growing ✨" src="./profile/header-light.svg" width="100%">
+  <img alt="Tan Junlin / theHerta27 · Python · AI Agent" src="./profile/header-light.svg" width="100%">
 </picture>
 </p>
 
-<p align="center">
-  <a href="https://herta27.top/"><img src="./profile/badge-blog.svg" alt="个人博客：herta27.top" height="32"></a>
-  <a href="mailto:1404758168@qq.com"><img src="./profile/badge-email.svg" alt="联系我：1404758168@qq.com" height="32"></a>
-</p>
+# 谭俊林 · theHerta27
 
-[关于我](#about) · [技术栈](#技术栈) · [GitHub Activity](#github-activity) · [联系方式](#联系方式)
+**2028届 · 西安电子科技大学硕士在读（2025.09—2028.06）**
 
-## About
+关注 Python 与 AI Agent 开发，围绕工具调用、执行审批、代码检查和会话恢复做工程实践。以下项目采用 AI 辅助开发，具体实现与验证范围见项目说明和公开案例。
 
-<picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./profile/about-mobile-dark.svg">
-  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="./profile/about-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="./profile/about-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./profile/about-light.svg">
-  <img alt="Tan Junlin；西安电子科技大学 · 硕士在读；AI 应用开发 · Agent 工程实践；Python · Go" src="./profile/about-light.svg" width="100%">
-</picture>
+[灰塔](#graytower) · [Herta](#herta) · [精选文章](#articles) · [联系方式](#contact)
 
-## 技术栈
+<a id="graytower"></a>
 
-### AI 应用
+## 灰塔
 
-Python · FastAPI · Pydantic · OpenAI-compatible API
+**面向游戏规则的代码修复 Agent · 2026.05—2026.09**
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=py,fastapi&amp;theme=dark">
-  <img alt="Python、FastAPI" src="https://skillicons.dev/icons?i=py,fastapi&amp;theme=light" height="40">
-</picture>
+基于官方 Codex Runtime Python SDK 构建单 Agent 流程：在受限的 Git 候选副本中修改代码，通过 Docker 运行真实检查，再由人决定采用或恢复。
 
-### 后端开发
+- **候选与检查**：限制候选修改范围，将检查结果绑定到对应的候选代码版本。
+- **人工交付**：采用与恢复由人工确认，保留可核查的变更和检查记录。
+- **验证范围**：99 项指游戏基线测试；已在临时副本中通过手工修改注释走通检查、采用与恢复流程。新主线的真实模型修复质量仍待验证。
 
-Go · MySQL · PostgreSQL · Redis
+[公开案例与验证记录](https://herta27.top/posts/graytower-agent-case-study/) · [源码分支（按仓库权限访问）](https://github.com/theHerta27/mihoyo-agent-project/tree/feature/reliable-game-agent)
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=go,mysql,postgres,redis&amp;theme=dark">
-  <img alt="Go、MySQL、PostgreSQL、Redis" src="https://skillicons.dev/icons?i=go,mysql,postgres,redis&amp;theme=light" height="40">
-</picture>
+<a id="herta"></a>
 
-### 工程工具
+## Herta
 
-Git · Linux · Docker · GitHub Actions · Prometheus · Grafana
+**Python 简化 CLI Agent Harness · 2026.04—2026.07**
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=git,linux,docker,githubactions,prometheus,grafana&amp;theme=dark">
-  <img alt="Git、Linux、Docker、GitHub Actions、Prometheus、Grafana" src="https://skillicons.dev/icons?i=git,linux,docker,githubactions,prometheus,grafana&amp;theme=light" height="40">
-</picture>
+实现简化的 CLI Harness，用唯一的 Agent Loop 串起模型、工具、审批与会话状态，观察一次任务如何从工具调用走到可验证结果。
+
+- **工具与审批**：注册 5 个工具，用 Pydantic 定义参数并校验输入；结合 diff 与 SHA-256 核对待执行内容，对有副作用的操作逐次审批。
+- **上下文与恢复**：按完整轮次管理上下文并估算 Token，用 SQLite 保存和恢复会话，不重放已执行的工具操作。
+- **验证范围**：113 项 CLI 测试通过；真实 DeepSeek 修复 `average` 案例通过原有 3 项测试和 4 组额外核查。该案例不代表整体修复成功率。
+
+[公开案例与验证记录](https://herta27.top/posts/herta-cli-case-study/) · [源码分支（按仓库权限访问）](https://github.com/theHerta27/herta-agent/tree/learning/unit-01-cli-read)
+
+<a id="articles"></a>
+
+## 精选文章
+
+- [Herta：工具调用与执行审批](https://herta27.top/posts/herta-tool-call/)
+- [Herta：恢复会话时如何避免重复执行](https://herta27.top/posts/herta-session-resume/)
+- [灰塔：让检查结果对应候选代码版本](https://herta27.top/posts/graytower-check-version/)
+
+更多工程记录见 [个人博客 herta27.top](https://herta27.top/)。
+
+## 技术
+
+- **Agent 开发**：Python · Pydantic · Codex Runtime Python SDK · OpenAI-compatible API
+- **工程与验证**：Git · Docker · SQLite · GitHub Actions
 
 ## GitHub Activity
 
@@ -75,22 +80,8 @@ Git · Linux · Docker · GitHub Actions · Prometheus · Grafana
 
 <p align="center"><sub>贡献数取自 GitHub 近一年统计，其他数据来自公开仓库；语言占比反映仓库构成，不代表熟练程度。</sub></p>
 
-## Contribution Snake
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/theHerta27/theHerta27/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/theHerta27/theHerta27/output/github-contribution-grid-snake.svg">
-  <img alt="GitHub 贡献日历动画" src="https://raw.githubusercontent.com/theHerta27/theHerta27/output/github-contribution-grid-snake.svg" width="100%">
-</picture>
+<a id="contact"></a>
 
 ## 联系方式
 
-个人博客：[https://herta27.top/](https://herta27.top/)
-
-邮箱：[1404758168@qq.com](mailto:1404758168@qq.com)
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./profile/footer-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./profile/footer-light.svg">
-  <img alt="Keep Coding 🚀 · 技术改变生活" src="./profile/footer-light.svg" width="100%">
-</picture>
+[个人博客 herta27.top](https://herta27.top/) · [1404758168@qq.com](mailto:1404758168@qq.com)

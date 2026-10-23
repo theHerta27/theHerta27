@@ -9,32 +9,32 @@ from PIL import Image, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT_DIR = ROOT / "profile"
-HEADER_SIZE = (1200, 220)
-HEADER_MOBILE_SIZE = (720, 270)
-ABOUT_SIZE = (1200, 350)
-ABOUT_MOBILE_SIZE = (720, 440)
-FOOTER_SIZE = (1200, 200)
+HEADER_SIZE = (1200, 170)
+HEADER_MOBILE_SIZE = (720, 220)
+ABOUT_SIZE = (1200, 236)
+ABOUT_MOBILE_SIZE = (720, 296)
+FOOTER_SIZE = (1200, 100)
 MESSAGES = (
-    "Hi there, I'm Tan Junlin 👋",
-    "技术改变生活 · Code Changes Life",
-    "Keep Building, Keep Growing ✨",
+    "Tan Junlin · theHerta27",
+    "Python · AI Agent",
+    "Tool Use · Check · Recover",
 )
-NAME = "Tan Junlin"
+NAME = "Tan Junlin / 谭俊林"
 PROFILE_FIELDS = (
-    ("education", "西安电子科技大学 · 硕士在读"),
-    ("focus", "AI 应用开发 · Agent 工程实践"),
-    ("languages", "Python · Go"),
+    ("education", "西安电子科技大学 · 2028届硕士在读"),
+    ("focus", "Python 与 AI Agent 开发"),
+    ("practice", "Tool Use · Check · Recover"),
 )
 PROFILE_DESCRIPTION = NAME + "；" + "；".join(value for _, value in PROFILE_FIELDS)
-FOOTER_TITLE = "Keep Coding 🚀"
-FOOTER_SUBTITLE = "技术改变生活"
+FOOTER_TITLE = "Build · Check · Recover"
+FOOTER_SUBTITLE = "theHerta27 · herta27.top"
 
 TYPE_MS = 70
 DELETE_MS = 40
 HOLD_FRAME_MS = 500
 GAP_MS = 300
-TEXT_Y = 95
-CURSOR_HEIGHT = 56
+TEXT_Y = 74
+CURSOR_HEIGHT = 45
 CURSOR_GAP = 5
 
 
@@ -76,10 +76,10 @@ def font(name: str, size: int) -> ImageFont.FreeTypeFont:
     return ImageFont.truetype(str(Path("C:/Windows/Fonts") / name), size)
 
 
-ASCII_FONT = font("CascadiaMono.ttf", 52)
+ASCII_FONT = font("CascadiaMono.ttf", 42)
 ASCII_FONT.set_variation_by_axes([700])
-CJK_FONT = font("msyhbd.ttc", 50)
-EMOJI_FONT = font("seguiemj.ttf", 48)
+CJK_FONT = font("msyhbd.ttc", 40)
+EMOJI_FONT = font("seguiemj.ttf", 40)
 PATH_FONT = font("consola.ttf", 16)
 
 
@@ -153,7 +153,7 @@ def message_frame(
         start_x = (background.width - text_width(draw, line)) / 2
         if start_x < 24:
             raise ValueError(f"Header text overflows: {line}")
-        y = (85 + index * 72) if mobile else TEXT_Y
+        y = (76 + index * 60) if mobile else TEXT_Y
         count = max(0, min(len(line), len(visible_message) - consumed))
         end_x = draw_mixed_text(draw, (start_x, y), line[:count], theme["headline"])
         if len(visible_message) >= consumed:
@@ -224,15 +224,14 @@ def render_header_svg(theme_name: str, mobile: bool = False) -> None:
     theme = THEMES[theme_name]
     title = "Tan Junlin developer profile"
     description = " / ".join(MESSAGES)
-    width, height = (720, 370) if mobile else HEADER_SIZE
+    width, height = HEADER_MOBILE_SIZE if mobile else HEADER_SIZE
     lines = []
-    y = 102
+    y = 96 if mobile else 94
     for index, message in enumerate(MESSAGES):
-        for line in message_lines(message, mobile):
-            size = (42 if mobile else 48) if index == 0 else (32 if mobile else 30)
-            color = theme['headline'] if index == 0 else theme['text']
-            lines.append(f'  <text x="{width / 2}" y="{y}" text-anchor="middle" fill="{color}" font-family="{SVG_MONO_FONT}, {SVG_CJK_FONT}" font-size="{size}" font-weight="700">{escape(line)}</text>')
-            y += 44 if mobile else 46
+        size = (38 if mobile else 40) if index == 0 else (30 if mobile else 23)
+        color = theme['headline'] if index == 0 else theme['text']
+        lines.append(f'  <text x="{width / 2}" y="{y}" text-anchor="middle" fill="{color}" font-family="{SVG_MONO_FONT}, {SVG_CJK_FONT}" font-size="{size}" font-weight="700">{escape(message)}</text>')
+        y += 42 if mobile else 30
     text_elements = "\n".join(lines)
     content = f"""<svg width="{width}" height="{height}" viewBox="0 0 {width} {height}" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">{escape(title)}</title>
@@ -250,17 +249,22 @@ def render_header_svg(theme_name: str, mobile: bool = False) -> None:
 def about_layout(mobile: bool = False) -> list[tuple[int, int, str, str, int]]:
     """Shared text and coordinates for SVG output and Pillow previews."""
     layout = [
-        (42, 105, "$ whoami", "accent", 26),
-        (42, 147, NAME, "text", 26),
-        (42, 207, "$ cat .profile", "accent", 26),
+        (32, 96, "$ whoami", "accent", 22),
+        (180, 96, NAME, "text", 22),
     ]
     for index, (key, value) in enumerate(PROFILE_FIELDS):
-        y = 250 + index * (64 if mobile else 36)
-        layout.extend([
-            (42, y, key, "key", 24),
-            (192, y, ":", "secondary", 24),
-            (218, y, value, "text", 24),
-        ])
+        y = 132 + index * (56 if mobile else 38)
+        if mobile:
+            layout.extend([
+                (32, y, key, "key", 19),
+                (32, y + 26, value, "text", 22),
+            ])
+        else:
+            layout.extend([
+                (32, y, key, "key", 22),
+                (180, y, ":", "secondary", 22),
+                (206, y, value, "text", 22),
+            ])
     return layout
 
 
@@ -321,11 +325,9 @@ def render_footer_svg(theme_name: str) -> None:
     content = f"""<svg width="{width}" height="{height}" viewBox="0 0 {width} {height}" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">{escape(FOOTER_TITLE)}</title>
   <desc id="desc">{FOOTER_SUBTITLE}</desc>
-  <path d="M0 40 C200 0 360 80 600 40 S1000 0 1200 40 V200 H0 Z" fill="{theme['underline']}" opacity=".16"/>
-  <path d="M0 55 C200 20 370 88 600 55 S1000 20 1200 55 V200 H0 Z" fill="{theme['background']}"/>
-  <path d="M0 55 C200 20 370 88 600 55 S1000 20 1200 55" stroke="{theme['accent']}" opacity=".45"/>
-  <text x="600" y="122" text-anchor="middle" fill="{theme['accent']}" font-family="{SVG_MONO_FONT}, Segoe UI Emoji, sans-serif" font-size="40" font-weight="600">{escape(FOOTER_TITLE)}</text>
-  <text x="600" y="166" text-anchor="middle" fill="{theme['secondary']}" font-family="{SVG_CJK_FONT}" font-size="30">{FOOTER_SUBTITLE}</text>
+  <line x1="24" y1="1" x2="1176" y2="1" stroke="{theme['border']}"/>
+  <text x="600" y="46" text-anchor="middle" fill="{theme['accent']}" font-family="{SVG_MONO_FONT}" font-size="28" font-weight="600">{escape(FOOTER_TITLE)}</text>
+  <text x="600" y="78" text-anchor="middle" fill="{theme['secondary']}" font-family="{SVG_MONO_FONT}" font-size="20">{FOOTER_SUBTITLE}</text>
 </svg>
 """
     output = OUTPUT_DIR / f"footer-{theme_name}.svg"

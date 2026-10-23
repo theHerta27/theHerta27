@@ -1,9 +1,7 @@
-<svg width="1200" height="200" viewBox="0 0 1200 200" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">Keep Coding 🚀</title>
-  <desc id="desc">技术改变生活</desc>
-  <path d="M0 40 C200 0 360 80 600 40 S1000 0 1200 40 V200 H0 Z" fill="#8A78C2" opacity=".16"/>
-  <path d="M0 55 C200 20 370 88 600 55 S1000 20 1200 55 V200 H0 Z" fill="#F7F9FC"/>
-  <path d="M0 55 C200 20 370 88 600 55 S1000 20 1200 55" stroke="#3F7FB7" opacity=".45"/>
-  <text x="600" y="122" text-anchor="middle" fill="#3F7FB7" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace, Segoe UI Emoji, sans-serif" font-size="40" font-weight="600">Keep Coding 🚀</text>
-  <text x="600" y="166" text-anchor="middle" fill="#62748A" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="30">技术改变生活</text>
+<svg width="1200" height="100" viewBox="0 0 1200 100" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Build · Check · Recover</title>
+  <desc id="desc">theHerta27 · herta27.top</desc>
+  <line x1="24" y1="1" x2="1176" y2="1" stroke="#CAD6E4"/>
+  <text x="600" y="46" text-anchor="middle" fill="#3F7FB7" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="28" font-weight="600">Build · Check · Recover</text>
+  <text x="600" y="78" text-anchor="middle" fill="#62748A" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="20">theHerta27 · herta27.top</text>
 </svg>
