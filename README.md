@@ -44,9 +44,10 @@
 
 - **工具与审批**：注册 5 个工具，用 Pydantic 定义参数并校验输入；结合 diff 与 SHA-256 核对待执行内容，对有副作用的操作逐次审批。
 - **上下文与恢复**：按完整轮次管理上下文并估算 Token，用 SQLite 保存和恢复会话，不重放已执行的工具操作。
-- **验证范围**：113 项 CLI 测试通过；真实 DeepSeek 修复 `average` 案例通过原有 3 项测试和 4 组额外核查。该案例不代表整体修复成功率。
+- **真实任务**：DeepSeek 在自建项目中修复两个结算模块、增加 JSON 输出，分别通过 7 项和 8 项测试及独立核查；保留新增测试断言失败后修正的记录。
+- **验证范围**：120 项 CLI 测试通过，包含原有 113 项和新增 7 项检查器测试；拒绝、外部编辑冲突与中断恢复均有真实记录。少量案例不代表整体修复成功率。
 
-[公开案例与验证记录](https://herta27.top/posts/herta-cli-case-study/) · [源码分支（按仓库权限访问）](https://github.com/theHerta27/herta-agent/tree/learning/unit-01-cli-read)
+[公开案例与验证记录](https://herta27.top/posts/herta-cli-case-study/) · [真实任务演示](https://herta27.top/demos/#herta) · [源码分支（按仓库权限访问）](https://github.com/theHerta27/herta-agent/tree/learning/unit-01-cli-read)
 
 <a id="articles"></a>
 
