@@ -26,11 +26,12 @@
 
 **面向游戏规则的代码修复 Agent · 2026.05—2026.09**
 
-基于官方 Codex Runtime Python SDK 构建单 Agent 流程：在受限的 Git 候选副本中修改代码，通过 Docker 运行真实检查，再由人决定采用或恢复。
+基于 LangGraph 与 LangChain 构建单研发 Agent：调查游戏规则代码，在隔离候选中修改、调用 Docker 检查并根据反馈修订，最后由人决定采用或恢复。
 
 - **候选与检查**：限制候选修改范围，将检查结果绑定到对应的候选代码版本。
 - **人工交付**：采用与恢复由人工确认，保留可核查的变更和检查记录。
-- **验证范围**：99 项指游戏基线测试；已在临时副本中通过手工修改注释走通检查、采用与恢复流程。新主线的真实模型修复质量仍待验证。
+- **状态与记忆**：LangGraph 管理澄清、检查等待和任务恢复；SQLite 保存附来源、版本和确认状态的项目记忆，供后续任务检索。
+- **验证范围**：337 项 Python 测试通过、4 项既有跳过，前端 23 项通过。脚本模型驱动真实 Docker，完成检查失败、修订、6 项局部和 99 项规则检查通过、采用及恢复；新框架的真实 DeepSeek 任务效果待验证。
 
 [公开案例与验证记录](https://herta27.top/posts/graytower-agent-case-study/) · [源码分支（按仓库权限访问）](https://github.com/theHerta27/mihoyo-agent-project/tree/feature/reliable-game-agent)
 
@@ -56,12 +57,14 @@
 - [Herta：工具调用与执行审批](https://herta27.top/posts/herta-tool-call/)
 - [Herta：恢复会话时如何避免重复执行](https://herta27.top/posts/herta-session-resume/)
 - [灰塔：让检查结果对应候选代码版本](https://herta27.top/posts/graytower-check-version/)
+- [灰塔：用 LangGraph 管理研发 Agent 的循环与恢复](https://herta27.top/posts/graytower-langgraph-loop/)
+- [项目记忆：来源、版本与人工确认](https://herta27.top/posts/graytower-project-memory/)
 
 更多工程记录见 [个人博客 herta27.top](https://herta27.top/)。
 
 ## 技术
 
-- **Agent 开发**：Python · Pydantic · Codex Runtime Python SDK · OpenAI-compatible API
+- **Agent 开发**：Python · LangGraph · LangChain · Pydantic · Tool Calling · OpenAI-compatible API
 - **工程与验证**：Git · Docker · SQLite · GitHub Actions
 
 ## GitHub Activity
