@@ -26,14 +26,14 @@
 
 **面向游戏规则的代码修复 Agent · 2026.05—2026.09**
 
-基于 LangGraph 与 LangChain 构建单研发 Agent：调查游戏规则代码，在隔离候选中修改、调用 Docker 检查并根据反馈修订，最后由人决定采用或恢复。
+基于 LangGraph 与 LangChain 构建单研发 Agent：调查游戏规则代码，在独立 Git 工作树中修改、调用 Docker 检查并根据反馈修订，检查合并结果后由开发者确认合入。
 
-- **候选与检查**：限制候选修改范围，将检查结果绑定到对应的候选代码版本。
-- **人工交付**：采用与恢复由人工确认，保留可核查的变更和检查记录。
+- **代码与检查**：每项任务使用独立分支和 Git 工作树，限制修改范围，对准备合入的代码运行 Docker 检查。
+- **人工交付**：审阅后复查版本并快进合入，撤销时新增提交，保留修改历史。
 - **状态与记忆**：LangGraph 管理澄清、检查等待和任务恢复；SQLite 保存附来源、版本和确认状态的项目记忆，供后续任务检索。
-- **验证范围**：337 项 Python 测试通过、4 项既有跳过，前端 23 项通过。脚本模型驱动真实 Docker，完成检查失败、修订、6 项局部和 99 项规则检查通过、采用及恢复；新框架的真实 DeepSeek 任务效果待验证。
+- **实际任务**：真实 DeepSeek 修复负数战技点输入，专项 7 项和原规则 99 项通过；工作树合入与撤销用真实 Git/Docker 验证。工程回归 Python 433 项通过、4 项既有跳过，前端 36 项通过。
 
-[公开案例与验证记录](https://herta27.top/posts/graytower-agent-case-study/) · [源码分支（按仓库权限访问）](https://github.com/theHerta27/mihoyo-agent-project/tree/feature/reliable-game-agent)
+[公开案例与验证记录](https://herta27.top/posts/graytower-agent-case-study/) · [源码分支（按仓库权限访问）](https://github.com/theHerta27/graytower-agent/tree/feature/reliable-game-agent)
 
 <a id="herta"></a>
 
