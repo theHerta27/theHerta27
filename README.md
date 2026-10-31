@@ -24,7 +24,7 @@
 
 ## 灰塔
 
-**面向游戏规则的代码修复 Agent · 2026.05—2026.09**
+**面向游戏战斗逻辑的代码修复 Agent · 2026.05—2026.09**
 
 基于 LangGraph 与 LangChain 构建单研发 Agent：定位问题、分析游戏规则代码，在独立 Git 工作树中修改、调用 Docker 检查并根据反馈修订，检查合并结果后由开发者确认合入。
 
@@ -39,7 +39,7 @@
 
 ## Herta
 
-**轻量级 CLI Coding Agent · 2026.04—2026.07**
+**轻量级 CLI Coding Agent Harness · 2026.04—2026.07**
 
 基于 Python 实现轻量级 Agent Harness，支持模型自主选择工具，完成代码检索、文件编辑与测试。程序负责工具参数校验、人工审批、上下文管理与会话恢复。
 
@@ -66,7 +66,7 @@
 
 - **编程语言**：Python · Go · TypeScript；了解 C#、C++
 - **Agent 开发**：LangGraph · LangChain · Pydantic · Tool Calling · 上下文管理 · 项目记忆
-- **工程与验证**：Python asyncio · Git Worktree · Docker · SQLite · Linux · 自动化测试
+- **工程与验证**：FastAPI · Python asyncio · Git Worktree · Docker · SQLite · Linux · 自动化测试
 - **语言能力**：CET-4/6 · JLPT N2（阅读满分、排名前4.8%）
 
 ## GitHub Activity
