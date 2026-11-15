@@ -16,17 +16,17 @@ ABOUT_MOBILE_SIZE = (720, 296)
 FOOTER_SIZE = (1200, 100)
 MESSAGES = (
     "Tan Junlin · theHerta27",
-    "Python · AI Agent",
-    "Tool Use · Check · Recover",
+    "Python · AI Full-Stack",
+    "RAG · Agents · Web Apps",
 )
 NAME = "Tan Junlin / 谭俊林"
 PROFILE_FIELDS = (
     ("education", "西安电子科技大学 · 2028届硕士在读"),
-    ("focus", "Python 与 AI Agent 开发"),
-    ("practice", "Tool Use · Check · Recover"),
+    ("focus", "AI 全栈开发 · RAG 与 Agent 应用"),
+    ("practice", "Python · TypeScript · SQL"),
 )
 PROFILE_DESCRIPTION = NAME + "；" + "；".join(value for _, value in PROFILE_FIELDS)
-FOOTER_TITLE = "Build · Check · Recover"
+FOOTER_TITLE = "Code · Learn · Share"
 FOOTER_SUBTITLE = "theHerta27 · herta27.top"
 
 TYPE_MS = 70
