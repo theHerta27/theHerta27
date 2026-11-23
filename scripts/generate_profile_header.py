@@ -15,15 +15,15 @@ ABOUT_SIZE = (1200, 236)
 ABOUT_MOBILE_SIZE = (720, 296)
 FOOTER_SIZE = (1200, 100)
 MESSAGES = (
-    "Tan Junlin · theHerta27",
-    "Python · AI Full-Stack",
-    "RAG · Agents · Web Apps",
+    "游衿Yueri · theHerta27",
+    "Computer Vision · AIGC",
+    "Code · Courtyard Notes",
 )
-NAME = "Tan Junlin / 谭俊林"
+NAME = "游衿Yueri"
 PROFILE_FIELDS = (
-    ("education", "西安电子科技大学 · 2028届硕士在读"),
-    ("focus", "AI 全栈开发 · RAG 与 Agent 应用"),
-    ("practice", "Python · TypeScript · SQL"),
+    ("vision", "图像生成 · YOLO 目标检测"),
+    ("education", "智慧教育 · 手写作业批改"),
+    ("software", "Vue 3 · FastAPI · PostgreSQL"),
 )
 PROFILE_DESCRIPTION = NAME + "；" + "；".join(value for _, value in PROFILE_FIELDS)
 FOOTER_TITLE = "Code · Learn · Share"
@@ -131,10 +131,8 @@ def base_frame(theme: dict[str, str], mobile: bool = False) -> Image.Image:
 def message_lines(message: str, mobile: bool) -> list[str]:
     if not mobile:
         return [message]
-    # Break at semantic boundaries; every character still comes from MESSAGES.
-    marker = "I'm " if "I'm " in message else " · " if " · " in message else ", "
-    split = message.index(marker) + len(marker)
-    return [message[:split], message[split:]]
+    left, divider, right = message.partition(" · ")
+    return [left + divider, right] if divider else [message]
 
 
 def message_frame(
@@ -222,7 +220,7 @@ def svg_window_chrome(theme: dict[str, str], label: str, width: int, height: int
 
 def render_header_svg(theme_name: str, mobile: bool = False) -> None:
     theme = THEMES[theme_name]
-    title = "Tan Junlin developer profile"
+    title = f"{NAME} developer profile"
     description = " / ".join(MESSAGES)
     width, height = HEADER_MOBILE_SIZE if mobile else HEADER_SIZE
     lines = []

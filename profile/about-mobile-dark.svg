@@ -1,6 +1,6 @@
 <svg width="720" height="296" viewBox="0 0 720 296" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">Tan Junlin / 谭俊林 · About</title>
-  <desc id="desc">Tan Junlin / 谭俊林；西安电子科技大学 · 2028届硕士在读；AI 全栈开发 · RAG 与 Agent 应用；Python · TypeScript · SQL</desc>
+  <title id="title">游衿Yueri · About</title>
+  <desc id="desc">游衿Yueri；图像生成 · YOLO 目标检测；智慧教育 · 手写作业批改；Vue 3 · FastAPI · PostgreSQL</desc>
   <rect x="1" y="1" width="718" height="294" rx="14" fill="#0E131B" stroke="#2A3545" stroke-width="2"/>
   <circle cx="34" cy="30" r="6" fill="#FF7B72"/>
   <circle cx="56" cy="30" r="6" fill="#D29922"/>
@@ -8,11 +8,11 @@
   <text x="106" y="36" fill="#91A0B5" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="16">theHerta27 / identity</text>
   <line x1="24" y1="58" x2="696" y2="58" stroke="#202938"/>
   <text x="32" y="96" fill="#7CC4F2" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace, Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22">$ whoami</text>
-  <text x="180" y="96" fill="#DFE8F3" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace, Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22">Tan Junlin / 谭俊林</text>
-  <text x="32" y="132" fill="#8CB7D6" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace, Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="19">education</text>
-  <text x="32" y="158" fill="#DFE8F3" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace, Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22">西安电子科技大学 · 2028届硕士在读</text>
-  <text x="32" y="188" fill="#8CB7D6" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace, Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="19">focus</text>
-  <text x="32" y="214" fill="#DFE8F3" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace, Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22">AI 全栈开发 · RAG 与 Agent 应用</text>
-  <text x="32" y="244" fill="#8CB7D6" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace, Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="19">practice</text>
-  <text x="32" y="270" fill="#DFE8F3" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace, Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22">Python · TypeScript · SQL</text>
+  <text x="180" y="96" fill="#DFE8F3" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace, Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22">游衿Yueri</text>
+  <text x="32" y="132" fill="#8CB7D6" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace, Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="19">vision</text>
+  <text x="32" y="158" fill="#DFE8F3" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace, Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22">图像生成 · YOLO 目标检测</text>
+  <text x="32" y="188" fill="#8CB7D6" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace, Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="19">education</text>
+  <text x="32" y="214" fill="#DFE8F3" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace, Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22">智慧教育 · 手写作业批改</text>
+  <text x="32" y="244" fill="#8CB7D6" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace, Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="19">software</text>
+  <text x="32" y="270" fill="#DFE8F3" font-family="Cascadia Mono, SFMono-Regular, Consolas, Liberation Mono, monospace, Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif" font-size="22">Vue 3 · FastAPI · PostgreSQL</text>
 </svg>
