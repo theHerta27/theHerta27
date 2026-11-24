@@ -10,8 +10,8 @@
 
 ## 💻 软件工程能力
 
-- **后端开发**：熟悉 Python / FastAPI 与 PostgreSQL，使用 Celery + Redis 处理异步任务调度与并发控制。
-- **前端开发**：使用 Vue 3 / React 与 TypeScript 构建交互界面，完成数据展示与批注复核功能。
+- **后端开发**：熟悉 Python / FastAPI 与 PostgreSQL，能够构建稳健的服务端架构，处理复杂业务逻辑、异步任务调度与并发控制。
+- **前端开发**：熟悉 Vue.js 与 React 生态，结合 TypeScript 构建现代化 Web 应用，提供流畅的交互与数据可视化体验。
 
 记录日常的学习笔记与项目实践，欢迎交流~
 
